@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My 3D Scene</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <!-- Загружаем собственную модель из Blender -->
+        <a-entity
+            gltf-model="url(scene.glb)"
+            position="0 0 -3"
+            scale="1 1 1">
+        </a-entity>
+
+        <!-- Фон -->
+        <a-sky color="#ECECEC"></a-sky>
+
+    </a-scene>
+</body>
+</html>
