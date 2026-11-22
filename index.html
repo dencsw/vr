@@ -17,10 +17,7 @@
 
 <body>
   <!-- arjs: параметры AR.js; detectionMode/ matrixCodeType нужны только для barcode-маркеров -->
-  <a-scene embedded
-           arjs="sourceType: webcam; sourceWidth: 1280; sourceHeight: 720; displayWidth: 1280; displayHeight: 720; debugUIEnabled: false;"
-           vr-mode-ui="enabled: false"
-           renderer="logarithmicDepthBuffer: true; alpha: true">
+  <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false">
 
     <!-- Маркер Hiro. Всё, что внутри <a-marker>, привязано к маркеру -->
     <a-marker preset="hiro">
